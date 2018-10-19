@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+    
+    
+</head>
+<body>
+
+<h2> The distance from Slippery Rock to Grove City is 8 and one third miles. The speed limit is 55 mph the entire way. How much time (in seconds) can be saved by driving at a particular speed (over 55)?</h2>
+    
+
+    <strong>Enter a speed over 55mph: </strong> <input type="text" id="speed" value=""><br>
+
+<button onclick="calcTime()">Calculate</button>
+
+
+<script>
+    
+ 
+   
+    
+function calcTime() {
+       var x = document.getElementById("speed").value;
+    x = parseFloat(x);
+    var y = (( (8.333/55) - (8.333 / x )) * 3600);
+
+    
+    if ( x > 55 ) {
+        alert( document.getElementById("speed").value = y) ;
+    }
+     else 
+    {
+        alert("You must enter a speed above 55mph");
+    }
+} 
+   
+</script>
+
+
+
+</body>
+</html>
